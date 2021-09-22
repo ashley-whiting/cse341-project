@@ -14,6 +14,7 @@ router.post('/addUser', (req, res, next) => {
 
   res.redirect('/ta02/');
 });
+//test
 
 // For requirement 03 of TA02
 router.post('/removeUser', (req, res, next) => {
