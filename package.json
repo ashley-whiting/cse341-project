@@ -7,7 +7,7 @@
   },
   "main": "/Prove02/app.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon Prove02/app.js",
     "test": "node test.js",
     "prove01": "nodemon prove01.js"
   },
