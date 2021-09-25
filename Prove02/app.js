@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 app.set('view engine', 'ejs');
-app.set('views', 'views');
+app.set('views', './Prove02/views');
 
 const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
