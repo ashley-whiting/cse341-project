@@ -1,1 +1,1 @@
-web: node Prove02/app.js
+web: node ./Prove02/app.js
