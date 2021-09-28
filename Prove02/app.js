@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 
 app.set('view engine', 'ejs');
-app.set('views', './Prove02/views');
+app.set('views', '../Prove02/views');
 
 const adminData = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
@@ -17,8 +17,8 @@ app.use('/admin', adminData.routes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-    res.status(404).render('404', { pageTitle: 'Page Not Found' });
+    res.status(404).render('404', { pageTitle: 'Page Not Found', path: '/404' });
 });
 
 
-app.listen(process.envPORT || 3000);
+app.listen(process.envPORT || 5000);
