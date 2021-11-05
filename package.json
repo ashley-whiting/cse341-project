@@ -7,17 +7,18 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
     "test": "node test.js",
-    "prove01": "nodemon prove01.js",
-    "prove02": "node ./Prove02/app.js"
+    "prove01": "nodemon prove01.js"
+    
   },
   "dependencies": {
     "ejs": "^2.7.4",
     "express": "^4.17.1",
     "express-handlebars": "^3.0.2",
     "express-session": "^1.17.2",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.14",
     "pug": "^3.0.2"
   },
   "devDependencies": {
